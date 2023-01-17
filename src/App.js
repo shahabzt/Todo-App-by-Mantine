@@ -2,7 +2,7 @@ import './App.css';
 import { Button, Flex, Grid, Input, Table, Text, Title } from "@mantine/core"
 import { useState } from 'react';
 
-import { IconArrowDownCircle ,IconListCheck , IconTrash} from "@tabler/icons"
+import {  IconPlus ,IconListCheck , IconTrash , } from "@tabler/icons"
 
 function App() {
 
@@ -66,7 +66,7 @@ function App() {
             value={inputValue}
             onChange={handleOnInput} placeholder="Type something..." type={"text"} /></Grid.Col>
           <Grid.Col span={2}>
-            <Button  leftIcon={<IconArrowDownCircle size={18} />} type='submit' onClick={handleOnAdd} variant="gradient" gradient={{ from: 'teal', to: 'lime', deg: 105 }}>Add
+            <Button  leftIcon={<IconPlus size={18} />} type='submit' onClick={handleOnAdd} variant="gradient" gradient={{ from: 'teal', to: 'lime', deg: 105 }}>Add
             </Button>
           </Grid.Col>
         </Grid>
